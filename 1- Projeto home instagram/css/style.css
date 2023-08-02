@@ -1,0 +1,233 @@
+body {
+    background-color: #fafafa;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    margin-top: 5.0rem;
+    
+}
+
+
+/* Left container */
+.left-container {
+    width: 50%;
+    max-width: 38rem;
+    margin-right: 32px;
+}
+
+.left-container img {
+    max-width: 38.5rem;
+    width: 100%;
+}
+
+/* Right container */
+.right-container {
+    width: 50%;
+    max-width: 38.5rem;
+}
+
+.login-user {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #dbdbdb;
+    padding: 40px;
+    background-color: #fff;
+}
+
+.login-user .logo-insta {
+    width: 17.5rem;
+    height: 5.1rem;
+    margin-bottom: 40px;
+}
+
+.login-user form input {
+    display: block;
+    margin: 0 auto;
+    border: 1px solid #dbdbdb;
+    padding: 12px 9px;
+    width: 26.8rem;
+    font-size: 1.2rem;
+    border-radius: 3px;
+    margin-bottom: 5px;
+    height: 38px;
+    background-color: #fafafa;
+    margin: 5px auto;
+}
+
+.login-user form input[type="submit"].valid {
+    background-color: blue;
+}
+
+.login-user form input[type="submit"] {
+    background-color: #b2dffc;
+    color: #fff;
+    margin-top: 15px;
+    border-radius: 5px;
+    height: 30px;
+    font-size: 13px;
+    padding: 0;
+    font-weight: bold;
+}
+
+.separetor {
+    position: relative;
+}
+
+.line {
+    margin-top: 15px;
+    border-top: 1px solid #dbdbdb;
+    width: 26.8rem;
+
+}
+
+.separetor span {
+    position: absolute;
+    top: 6px;
+    left: 40%;
+    background-color: #fff;
+    width: 5rem;
+    text-align: center;
+}
+
+.login-facebook {
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-facebook img{
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.login-facebook a {
+    font-weight: bold;
+    color: #385185;
+    font-size: 16px;
+}
+
+.forgot-password {
+    margin-top: 25px;
+}
+
+.forgot-password a {
+    color: #373799;
+    font-size: 15px;
+}
+
+/* not-have-account */
+.not-have-account {
+    border: 1px solid #dbdbdb;
+    margin-top: 1rem;
+    padding: 2.5rem;
+    text-align: center;
+}
+
+.not-have-account a {
+    color: #373799;
+}
+
+/* Get app */
+.get-app {
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 1.8rem;
+}
+
+.get-app ul {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.get-app ul li a img {
+    width: 13rem;
+}
+
+footer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+footer ul {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+footer ul li {
+    margin-left: 20px;
+}
+
+footer ul li a {
+    font-size: 13px;
+    color: #c4c1c1;
+}
+
+footer p {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 15px;
+    color: #c4c1c1;
+}
+
+@media (max-width: 991px) {
+    .right-container {
+        width: 100%;
+    }
+    .left-container {
+        display: none;
+    }
+
+    footer {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .login-user {
+        border: none;
+        align-items: normal;
+        padding: 30px;
+    }
+    
+    .login-user .logo-insta {
+        display: block;
+        margin: 0 auto;
+    }
+    
+    .login-user form input {
+        width: 100%;
+    }
+    
+    .not-have-account {
+        display: none;
+    }
+
+    .forgot-password {
+        text-align: center;
+    }
+
+    .login-facebook a {
+        font-family: 1.4rem;
+    }
+
+    .line {
+        width: 100%;
+    }
+
+    .separetor span {
+        left: 37%;
+    }
+}
